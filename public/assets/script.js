@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchChatGPTResponse(conversationHistory) {
     try {
-        const response = await fetch('https://next-velos-actions.vercel.app/api/openai', {
+        const response = await fetch('api/openai', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json' 
