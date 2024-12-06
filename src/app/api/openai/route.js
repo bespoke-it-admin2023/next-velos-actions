@@ -7,7 +7,6 @@ const CORS_HEADERS = {
     'Access-Control-Allow-Origin': '*', // Allow only your frontend URL
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    'Access-Control-Allow-Credentials': 'true', // Allow credentials
 };
 
 // Handle CORS preflight request
@@ -35,7 +34,7 @@ export async function POST(request) {
 
     try {
         const response = await axios.post('https://api.openai.com/v1/chat/completions', {
-            model: 'gpt-3.5-turbo', // Specify the model you are using
+            model: 'gpt-4o-mini', // Specify the model you are using
             messages: messages,
         }, {
             headers: {
