@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import axios from 'axios';
 
 const CORS_HEADERS = {
-    'Access-Control-Allow-Origin': 'http://127.0.0.1:5500', // Change to your frontend URL
+    'Access-Control-Allow-Origin': 'https://www.velosai.pro/', // Change to your frontend URL
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 };
