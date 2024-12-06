@@ -1,7 +1,7 @@
 // app/middleware.js
 import { NextResponse } from 'next/server';
 
-const allowedOrigins = ['https://www.velosai.pro'];
+const allowedOrigins = ['https://www.velosai.pro', '*'];
 
 export function middleware(request) {
     const origin = request.headers.get('origin');
